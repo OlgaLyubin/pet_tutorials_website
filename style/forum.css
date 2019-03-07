@@ -1,0 +1,109 @@
+body{
+    height: 100%;
+    margin: 0;
+    background-image: url("../pictures/giantpaw.png");
+    background-repeat: no-repeat;
+    background-position: 130% 50%; 
+}
+
+h1 {
+	font-family: "arima" !important;
+	font-size: 80px !important;
+}
+
+h1, h4 {
+  text-align: center;
+  margin: 0px !important;
+}
+
+.footer {
+  top: 90% !important;
+  margin-top: 10% !important;
+  bottom: 0;
+  position: absolute;
+}
+
+.contactUs {
+  top: initial !important;
+  bottom: 0;
+  position: absolute;
+}
+
+#addTopic {
+    width: 7%;
+    bottom: 6%;
+    right: 1%;
+    position: fixed;
+    z-index: 1;
+}
+
+#forum {
+	font-family: "Assistant";
+	margin-top: 4%;
+    width: 50%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 10% !important;
+}
+
+.topicPicture {
+    width:50px;
+    padding-top: 15px !important;
+}
+
+#forumImage {
+  width: 18%;
+  top: 32%;
+  left: 13%;
+  position: absolute;
+  z-index: -1;
+}
+
+table {
+  margin-left:auto; 
+  margin-right:auto;
+  width: 85%;
+  font-size: 17px;
+}
+
+td {
+  padding-left: 10px !important;
+  padding-right: 10px !important;
+}
+
+.heading {
+  font-size: 23px;
+  padding-top: 15px !important;
+}
+
+.datePosted {
+  text-align: center;
+}
+
+#addPost {
+  background-color: #86888c;
+  width: 27%;
+  height: 52%;
+  right: 0;
+  bottom: 10%;
+  position: fixed;
+  visibility: hidden;
+  font-family: "Assistant";
+}
+
+#headingInput, #description, #postButton {
+  padding: 5px;
+  width: 65%;
+  margin-right: auto;
+  margin-left: auto;
+  display: block;
+  font-size: 15px;
+}
+
+#postButton {
+  width: 26%;
+  background-color: rgb(55, 52, 53);
+  border: none;
+  font-size: 18px;
+  color: rgb(192,191,191) 
+}

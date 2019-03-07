@@ -1,0 +1,170 @@
+@font-face{
+    font-family: "Gabuek";
+    src: url("GabuekScript.otf");
+    
+}
+
+.diet{
+   font-family: 'Gabuek' !important; 
+    
+}
+
+h1{
+    font-family: 'Gabuek' !important;
+    text-align: center;
+    font-size: 60px;
+    margin-top: 5%;
+}
+
+.paw{
+    position:fixed;
+    top:-90px;
+    right: -150px;
+}
+
+.dogWithBowl{
+    position: absolute;
+    width: 20%;
+    height: auto;
+    left:12%;
+    top:50%;
+    
+}
+
+.filter{
+    position: absolute;
+    width: 50px;
+    height: auto;
+    left:25%;
+}
+
+
+.container {
+  position: absolute;
+  width: 50%;
+       left: 450px;
+  
+}
+.container2 {
+  position: absolute;
+  width: 55%;
+    height:auto;
+       left: 800px;
+  
+}
+.container3 {
+  position: absolute;
+  width: 50%;
+    top:450px;
+       left: 450px;
+  
+}
+
+.container4 {
+  position: absolute;
+  width: 50%;
+     top:450px;
+       left: 800px;
+  
+}
+
+.image {
+  display: block;
+  width: 200px;
+  height: auto;
+ 
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width:200px;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: white;
+}
+
+.container:hover .overlay {
+  opacity: 0.8;
+}
+.container2:hover .overlay {
+  opacity: 0.8;
+}
+.container3:hover .overlay {
+  opacity: 0.8;
+}
+.container4:hover .overlay {
+  opacity: 0.8;
+}
+
+.text {
+     font-family: 'Clambake', sans-serif;
+  color: black;
+    text-align: center;
+  font-size: 25px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+
+
+
+.sideBar{
+    background-color: #efefef;
+    position:fixed;
+    width: 15%;
+    top: 0;
+    height: 100vh;
+    visibility: hidden; 
+
+}body{
+    height: 100%;
+    margin: 0;
+}
+.sidebarList{
+    padding-top: 10%;
+    padding-bottom: 10%;
+    text-align: center
+
+
+}
+#sidebarTop{
+    height: 20%;
+}
+.sidebarList:hover {
+    background-color: #d3d3d3;
+}
+@font-face {
+    font-family: "clam";
+    src: url(fonts/Clambake.otf);
+}
+a{
+    text-decoration:none;
+    color: #64667a !important;
+    font-family: "clam" !important;
+    font-size: 130%;
+}
+#paw {
+	width: 5%;
+	bottom: 1%;
+	left: 1%;
+	position: fixed;
+}
+
+form{
+    
+    font-family: 'Clambake';
+    position: absolute;
+    left:  5%;
+    top: 25%;
+    font-size: 15px;
+    
+    
+}

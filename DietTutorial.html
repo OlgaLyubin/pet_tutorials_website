@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style/tutorials.css">
+        <script src="tutorial.js"></script> 
+        <meta charset="utf-8"/>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+        <title>Diet Tutorial</title>
+
+    </head>
+
+    <body>
+        <!-- NAV BAR-->
+        <nav class="navbar navbar-default" data-spy="affix">
+            <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#topNav" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="home.html">Yelp for Help</a>
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="topNav">
+
+                    <ul class="nav navbar-nav">
+                        <li><a href="DietTutorial.html">Diet</a></li>
+                        <li><a href="BehaviourTutorial.html"><span>Behaviour</span></a></li>
+                        <li><a href="HomeLifeTutorial.html#">Home Life</a></li>
+                        <li><a href="HealthTutoral.html">Health</a></li>
+                        <li><a href="GroomingTutorial.html">Grooming</a></li>
+                        <li>
+                            <form class="navbar-form navbar-right">
+                                <div class='search-box'>
+                                    <form  class='search-form'>
+                                        <input style="width:9vw;" class='form-control'  placeholder='Search Tutorial' type='text'>
+                                        <button class='btn btn-link search-btn'>
+                                            <i class='glyphicon glyphicon-search'></i>
+                                        </button>
+                                    </form>
+                                </div>
+                            </form>
+                        </li>
+                    </ul>
+                </div><!-- /.navbar-collapse -->
+            </div><!-- /.container-fluid -->
+        </nav>
+        <!-- Top Nav Bar END-->
+
+        <!-- SIDE BAR -->
+        <div class="menu-hide">
+            <div id="sidebarTop"></div>
+            <nav>
+                <ul>
+                    <li><div><a href="home.html">H O M E P A G E</a></div></li>
+                    <li><div><a href="login.html">L O G I N</a></div></li>
+                    <li><div><a href="signup.html">S I G N  U P</a></div></li>
+                    <li><div><a href="favourites.html">F A V O U R I T E S <span class="glyphicon glyphicon-star"></span></a></div></li>
+                    <li><div><a href="forum.html">F O R U M</a></div></li>
+                </ul>
+            </nav>
+        </div>
+        <img src="pictures/paw.png" onClick="showSidebar()" id="paw"/>
+        <!-- side nav bar stuff ends here -->
+        <!--Background Image of Paw-->
+        <img style=" position: fixed; width:30%; top:30%; left:5%;" src="pictures/backgroundpaw2.png" >
+
+        <!--Food Bowl Icon and Title -->
+        <img src="pictures/foodBowl.png" style="position: absolute; width:5vw; left:55%; top:23%;">
+
+        <h1 class="title" style="font-size: 5vw;">Diet</h1>
+
+        <p style="font-size: 1.1vw; left:30%; position: absolute;  top:32%;  font-family: 'assistant';">On this page you will find tutorials related to the diet of your dog. Explore the icons to find out more.</p>
+
+
+        <!--Pop up when a Favourite has been added-->
+        <span class="popup" id="popup">Added to Your Favourites!</span>
+
+
+        <!--Icon for Feeding Times-->
+        <div class="feedIcon">
+            <a href="#feedingTimes"><img src="pictures/feeding.png" id="feed" class="image" alt="Feeding Times" >
+            </a>
+        </div> 
+
+        <!--Icon for Food-->
+        <div class="foodIcon">
+            <a href="#foods">   <img src="pictures/food.png" id="food" class="image " alt="Dog Food">
+            </a>
+        </div>     
+
+        <!--Icon for Foods to Avoid-->
+        <div class="avoidIcon">
+            <a href="#avoids"><img src="pictures/notfeed.png" id="avoid" class="image" alt="Foods to Avoid">
+            </a>
+        </div>     
+
+        <!--Icon for Dieting-->
+        <div class="weightIcon">
+            <a href="#diets">  <img src="pictures/weight.png" id="weight" class="image" alt="Dieting">
+            </a>
+        </div> 
+
+
+        <!--FEEDING TIMES SECTION-->
+        <img class="pulse" style="width:4%; height:auto; top:103%; left:75%;" src="pictures/favStar.png" id="changeme" alt="Favourite This Tutorial" onclick='changeOpacity();fadePopup();'>       
+
+        <h2 style="top:100%; left:35%; font-size: 2.1vw;" id="feedingTimes">At What Times Should I Feed my Dog?</h2>
+        <p style="font-size: 1.1vw; left:34%; position: absolute;  top:110%;  font-family: 'assistant';"> It's important to feed your pet the right dog food and treats for its age and breed</p>
+
+
+        <p style=" font-size: 1.15vw; position: absolute; top:120%; padding-right:20%; padding-left:20%; word-wrap: normal;  ">  <img  src=pictures/feed2.jpg style=" float:left;width:30%; padding-right:1%;"> 
+            <span style=" font-family: 'arima'; font-weight: bold; font-size:150%;">Feeding</span> <br/>
+            The domestic dog (Canis lupus familiaris when considered a subspecies of the wolf  or Canis familiaris when considered a distinct species) is a member of the genus Canis (canines), which forms part of the wolf-like canids, and is the most widely abundant terrestrial carnivore. The dog and the extant 
+            grey wolf are sister taxa as modern wolves are not closely related to the wolves that were first domesticated, which implies that the direct ancestor of the dog is extinct. The dog was the first species to be domesticated and has been selectively bred over millennia for various behaviours, sensory capabilities, and physical attributes.The domestic dog (Canis lupus familiaris when considered a subspecies of the wolf  or Canis familiaris when considered a distinct species)  is a member of the genus Canis (canines), which forms part of the wolf-like canids, and is the most widely abundant 
+            <br/>
+            <span style=" font-family: 'arima'; font-weight: bold; font-size:150%;">Feeding</span> 
+            <br/>terrestrial carnivore. The dog and the extant grey wolf are sister <img  src=pictures/feed3.jpg  style="padding-left:1%;  float: right; width:40%;">taxa as modern wolves are not closely related to the wolves that were first domesticated, which implies that the direct ancestor of the dog is extinct. The dog was the first species to be domesticated and has been selectively bred over millennia for various behaviours, sensory capabilities, and physical attributes.The 
+            <br/>
+            <span style=" font-family: 'arima'; font-weight: bold; font-size:150%;">Feeding</span> 
+            <br/>
+            domestic dog (Canis lupus familiaris when considered a subspecies of the wolf  or Canis familiaris when considered a distinct species) is a member of the genus Canis (canines), which forms part of the wolf-like canids, and is the most widely abundant terrestrial carnivore. The dog and the extant grey wolf are sister taxa as modern wolves are not closely related to the wolves that were first domesticated, which implies that the direct ancestor of the dog is extinct. The dog was the first species to be domesticated and has been selectively bred over millennia for various behaviours, sensory capabilities, and physical attributes.</p>
+
+        <br/>
+        <hr align=center width=40% style="top:215%; left:30%; position: absolute;">
+        <br/>
+
+
+        <!--FOOD SECTION-->
+
+        <img class="pulse" style="width:4%; height:auto; top:227%; left:75%;" src="pictures/favStar.png" id="changeme2" alt="Favourite This Tutorial" onclick='changeOpacity2();fadePopup();'>
+
+        <h2 style="font-size: 2.1vw; left:33%;top:225%;" id="foods">What Type of Food Should I give my Dog?</h2>
+        <p style="font-size: 1.1vw; left:34%; position: absolute;  top:235%;  font-family: 'assistant';"> It's important to feed your pet the right dog food and treats for its age and breed</p>
+
+        <p style=" font-size: 1.15vw; position: absolute;float: right; top:235%;  padding-right:20%; padding-left:20%; word-wrap: normal;  "> 
+            <br/>
+            <span style=" font-family: 'arima'; font-weight: bold; font-size:150%;">Types</span>
+            <br/>
+            <img  src=pictures/feed4.jpg  style="padding-top: 1%; float:left;width:50%; padding-right:1%">
+            The domestic dog (Canis lupus familiaris when considered a subspecies of the wolf  or Canis familiaris when considered a distinct species) is a member of the genus Canis (canines), which forms part of the wolf-like canids, and is the most widely abundant terrestrial carnivore. The dog and the extant grey wolf are sister taxa as modern wolves are not closely related to the wolves that were first domesticated, which implies that the direct ancestor of the dog is extinct. The dog was the first species to be domesticated and has been selectively bred over millennia for various  behaviours, sensory capabilities, and physical attributes.The domestic dog (Canis lupus familiaris 
+            <br/> 
+            <br/>
+            <span style=" font-family: 'arima'; font-weight: bold; font-size:150%;">Types</span>
+            <br/> 
+            
+            <iframe style="float:left;padding-top: 1%; width: 50%; height: 245px; padding-right:1%" src="https://www.youtube.com/embed/4McGrXmSStc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+            which forms part of the wolf-like canids, and is the most widely abundant The domesticdog (Canis lupus familiaris when considered a subspecies of the wolf  or Canis familiaris when considered a distinct species) is a member of the genus Canis (canines), which forms part of the wolf-like canids, and is the most widely abundant terrestrial carnivore. The dog and the extant 
+            grey wolf are sister taxa as modern wolves are not closely related to the wolves that were first domesticated, which implies that the direct ancestor of the dog is extinct. The dog was the first species to be domesticated and has been    </p>
+
+        <br/>
+        <hr align=center width=40% style="top:330%; left:30%; position: absolute;"> 
+        <br/>
+
+        <!--FOODS TO AVOID SECTION-->
+
+        <img class="pulse" style="width:4%; height:auto; top:343%; left:75%;" src="pictures/favStar.png" id="changeme3" alt="Favourite This Tutorial" onclick='changeOpacity3();fadePopup();'>
+
+        <h2 style="font-size: 2.1vw; left:32%; top:340%;" id="avoids">What Foods Should I Avoid Giving my Dog?</h2>
+        <p style="font-size: 1.1vw; left:34%; position: absolute;  top:350%;  font-family: 'assistant';"> It's important to feed your pet the right dog food and treats for its age and breed</p>
+        <br/>
+
+        <img  src=pictures/feed1.jpg  style="top: 360%; position: absolute; left:50%; width:30%;">
+
+        <div style="font-size: 1.15vw; position: absolute; top: 355%; text-align: center; left:25%;">
+
+            <span style=" font-family: 'arima'; font-weight: bold; font-size:150%;">Avoid</span> 
+            <ul style="font-family:'arima';">
+                <li>Food to Avoid Food to Avoid  </li>
+                <li>Food to Avoid Food to Avoid </li>
+                <li>Food to Avoid Food to Avoid </li>
+                <li>Food to Avoid Food to Avoid </li>
+                <li>Food to Avoid Food to Avoid </li>
+            </ul>
+            <br/>
+
+            <span style=" font-family: 'arima'; font-weight: bold; font-size:150%;">Avoid</span> 
+            <ul style="font-family:'arima';">
+                <li>Food to Avoid Food to Avoid  </li>
+                <li>Food to Avoid Food to Avoid </li>
+                <li>Food to Avoid Food to Avoid </li>
+                <li>Food to Avoid Food to Avoid </li>
+                <li>Food to Avoid Food to Avoid </li>
+
+            </ul>
+        </div>
+
+        <br/>
+        <hr align=center width=40% style="top:410%; left:30%; position: absolute;">
+        <br/>
+
+        <!--DIETING SECTION-->
+
+
+        <img class="pulse" style="width:4%; height:auto; top:422%; left:75%;" src="pictures/favStar.png" id="changeme4" alt="Favourite This Tutorial" onclick='changeOpacity4();fadePopup();'>
+
+        <h2 style="top:420%; font-size: 2.1vw; left:38%;" id="diets">Should my Dog Start Dieting?</h2>   
+        <p style="font-size: 1.1vw; left:34%; position: absolute;  top:430%;  font-family: 'assistant';"> It's important to feed your pet the right dog food and treats for its age and breed</p>
+
+
+        <p style="text-align: justify; left:24%; font-size: 1.1vw; right:20%; top:440%; position: absolute;">  
+            <iframe style="position: sticky; align-content: center; width:80%; height: 400px;padding-top: 1%;left:30%; padding-bottom:1%" src="https://www.youtube.com/embed/Vf_4juIwad0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+            <br/>
+            The domestic dog (Canis lupus familiaris when considered a subspecies of the wolf  or Canis familiaris when considered a distinct species) is a member of the genus Canis (canines), which forms part of the wolf-like canids, and is the most widely abundant terrestrial carnivore. The dog and the extant 
+            grey wolf are sister taxa as modern wolves are not closely related to the wolves that were first domesticated, which implies that the direct ancestor of the dog is extinct. The dog was the first species to be domesticated and has been selectively bred over millennia for various behaviours, sensory capabilities, and physical attributes.The domestic dog (Canis lupus familiaris when considered a subspecies of the wolf  or Canis familiaris when considered a distinct species)  is a member of the genus Canis (canines), which forms part of the wolf-like canids, and is the most widely abundant </p>
+
+        <button onclick="topFunction()" id="myBtn" title="Go to top">Back to Top</button> 
+
+
+        <hr align=center width=40% style="top:520%; left:30%; position: absolute;">
+
+
+        <!--FOOTER / BOTTOM OF PAGE -->
+
+        <!--Icon for Keeing Fit -->
+        <div class="feedIcon" style="left:23%;top:535%;">
+            <a href="BehaviourTutorial.html"><img src="pictures/bark.png" id="feed" class="image" alt="Feeding Times" >
+            </a>
+        </div> 
+
+        <!--Icon for Barking-->
+        <div class="foodIcon" style="left:43%; top:535%;">
+            <a href="HealthTutorial.html">   <img src="pictures/medicine.png" id="food" class="image " alt="Dog Food">
+            </a>
+        </div>     
+
+        <!--Icon for Aggression-->
+        <div class="avoidIcon" style=" left:63%;top:535%;">
+            <a href="GroomingTutorial.html"><img src="pictures/fleas.png" id="avoid" class="image" alt="Foods to Avoid">
+            </a>
+        </div> 
+
+        <h2 style="left:44%; font-size: 1.5vw; position: absolute; top: 525%;"> What to expore next...</h2>
+
+
+
+        <a href="contactus.html" class="contactUs">Contact Us</a>
+        <div class="footer"> 
+           
+            <!--SOCIAL MEDIA ICONS-->
+            <img  class="contact" style="right:20%;" alt="facebook" src="pictures/facebook.png">
+            <img class="contact" style="right:15%; bottom:4%; width:4%;" alt="twitter"  src="pictures/twitter.png">
+            <img class="contact" style="bottom:4%; right:24.5%;" alt="instagram"   src="pictures/insta.png">
+                 
+        </div>
+        <script src="scripts/tutorial.js"></script>
+        <script src="scripts/controls.js"></script>
+
+
+    </body>
+</html>

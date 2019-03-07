@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Contact Us - Yelp for Help</title>
+	<link rel="stylesheet" type="text/css" href="style/contactus.css">
+	<link rel="stylesheet" type="text/css" href="style/home.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="scripts/controls.js"></script>
+</head>
+<body>
+	<!-- top nav bar stuff -->
+<nav class="navbar navbar-default" data-spy="affix">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#topNav" aria-expanded="false">
+          <!--Span is used for hamburger icon -->
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+        <!-- Website brand name which on click will alsways lead to home page -->
+      <a class="navbar-brand" href="home.html">Yelp for Help</a>
+    </div>
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="topNav">
+      <ul class="nav navbar-nav">
+        <li><a href="DietTutorial.html">Diet</a></li>
+                        <li><a href="BehaviourTutorial.html"><span>Behaviour</span></a></li>
+                        <li><a href="HomeLifeTutorial.html">Home Life</a></li>
+                        <li><a href="HealthTutorial.html">Health</a></li>
+                        <li><a href="GroomingTutorial.html">Grooming</a></li>
+          <li>
+            <form class="navbar-form navbar-right">
+                <!-- group the search form and the bootsrap 3 - glyphicon together -->
+              <div class="form-group">
+                  <input class='form-control' placeholder='Search tutorial' type='text'>
+                  <button class='btn btn-link search-btn'>
+                    <i class='glyphicon glyphicon-search'></i>
+                  </button>
+              </div>
+            </form>
+          </li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+<!-- top nav bar stuff ends here-->
+<!-- side nav bar stuff -->
+<div class="menu-hide">
+    <div id="sidebarTop"></div>
+  <nav>
+    <ul>
+      <li><div><a href="#">H O M E P A G E</a></div></li>
+       <li><div><a href="login.html">L O G I N</a></div></li>
+        <li><div><a href="signup.html">S I G N  U P</a></div></li>
+        <li><div><a href="favourites.html">F A V O U R I T E S <span class="glyphicon glyphicon-star"></span></a></div></li>
+        <li><div><a href="forum.html">F O R U M</a></div></li>
+    </ul>
+  </nav>
+</div>
+    <!-- On click of paw img run JS to toggle side bar -->
+<img src="pictures/paw.png" onClick="showSidebar()" id="paw" alt="paw"/>
+	<img src="pictures/contactDog.png" id="contactDog" alt="dogImage"/>
+	<div id="contactUs">
+		<h1>Contact Us</h1>
+		<h4>If you have any suggestions, questions or complaints, feel free to contact us!</h4>
+		<h4>We aim to answer all queries within 24 hours.</h4>
+		<!-- Input form for sending a message: -->
+		<form>
+		    <div id="emailinput">
+		    	<input type="text" id="email" placeholder="Email address">
+		    	<img src="pictures/greenTick.png" id="greenTick" alt="greenTick">
+			</div>
+		    <p id="invalidEmail">Invalid email address</p>
+		    <textarea rows="8" placeholder="Type your message here.." id="contactMessage"></textarea><br><br>
+		    <input type="button" id="submitButton" onClick="sendMessage()" value="Submit">
+		</form>
+	</div>
+	<div class="alert success" id="messageSent">
+	  <span class="closebtn">&times;</span>Your message has been sent!
+	</div>
+	<!-- Footer: -->
+	<div class="footer" > 
+<a href="contactus.html"  class="contactUs">Contact Us</a>
+    <!--SOCIAL MEDIA ICONS-->
+    <img  class="contact" style="right:20%;" alt="facebook" src="pictures/facebook.png">
+            <img class="contact" style="right:15%; bottom:4%; width:4%;" alt="twitter" src="pictures/twitter.png">
+            <img class="contact" style="bottom:4%; right:24.5%;" alt="instagram"  src="pictures/insta.png">
+
+</div>
+	<script src="scripts/contactUs.js"></script>
+</body>
+</html>

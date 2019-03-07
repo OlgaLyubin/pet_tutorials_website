@@ -1,0 +1,130 @@
+
+
+h1 {
+	font-family: "arima" !important;
+	font-size: 80px !important;
+}
+
+body{
+    height: 100% !important;
+    margin: 0;
+    background-image: url("../pictures/giantpaw.png");
+    background-repeat: no-repeat;
+}
+
+.footer {
+  top: initial !important;
+  bottom: 0;
+  position: absolute;
+}
+
+.contactUs {
+  top: initial !important;
+  bottom: 0;
+  position: absolute;
+}
+
+
+#loginBody {
+	background-position: 130% 50%; 
+}
+
+#signupBody {
+	background-position: 130% 50%; 
+}
+
+#dogintshirt {
+	width: 25%;
+	left: 13%;
+	top: 25%;
+	position: absolute;
+	z-index: -1;
+}
+
+#dancingdog {
+  position: absolute;
+  top: 37%;
+  right: 18%;
+  z-index: -1;
+}
+
+#signup, #login {
+	text-align: center;
+	font-family: Assistant;
+	margin-top: 10%;
+}
+
+#email, #password {
+	background-color: rgb(222, 223, 224);
+	color: rgb(55, 52, 53);
+	padding-top: 15px;
+	padding-bottom: 15px;
+	padding-left: 10px;
+	padding-right: 80px;
+	border: none;
+	width: 20%;
+	font-family: Assistant;
+	font-size: 18px;
+}
+
+#signupbutton, #loginbutton {
+	background-color: rgb(55, 52, 53);
+	color: rgb(192,191,191);
+	padding-top: 10px;
+	padding-bottom: 10px;
+	border: none;
+	font-family: Assistant;
+	font-size: 20px;
+	width: 15%;
+}
+
+#signupbutton:disabled {
+  background-color: rgb(96, 95, 96);
+}
+
+#greenTick {
+  width: 2%;
+  visibility: hidden;
+}
+
+#signedUp { 
+  visibility: hidden;
+  position: fixed;
+  width: 25%;
+  right: 0;
+  bottom: 7%;
+  font-family: Assistant;
+  font-size: 20px;
+}
+
+#invalidEmail {
+  visibility: hidden;
+  color: #d13030;
+}
+
+#signupemail > #email{
+	margin-left: 32px;
+}
+
+.alert {
+  padding: 12px !important;
+  color: white;
+  opacity: 1;
+  transition: opacity 0.6s;
+  background-color: #269b53;
+}
+
+.closebtn {
+  margin-left: 15px;
+  color: white;
+  font-weight: bold;
+  float: right;
+  font-size: 22px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.closebtn:hover {
+  color: black;
+}

@@ -1,0 +1,52 @@
+/* Positioning for under construction dog image */
+
+body{
+    background-color: white !important;
+    background-image: none !important;
+}
+
+.underConstruction{
+
+    width: 30vw;
+
+    position: absolute;
+
+    left: 35vw;
+
+    top: 1vw;
+
+    z-index:-1;
+
+}
+
+/* Positioning for title text on under construction page */
+
+#constructionText{
+
+    font-family: 'arima';
+
+    font-size: 3vw;
+
+    position: absolute;
+
+    bottom: 8vw;
+
+    left: 23vw;
+
+}
+
+/* Positioning for text on under construction page */
+
+#constructionText2{
+
+    font-family: assistant;
+
+    font-size: 1vw;
+
+    position: absolute;
+
+    bottom: 7vw;
+
+    left: 34vw;    
+
+}

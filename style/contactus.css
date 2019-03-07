@@ -1,0 +1,117 @@
+body{
+  height: 100%;
+  margin: 0;
+  background-image: url("../pictures/giantpaw.png");
+  background-repeat: no-repeat;
+  background-position: 130% 50%; 
+}
+
+h1 {
+	font-family: "arima" !important;
+	font-size: 80px !important;
+}
+
+.footer {
+  top: initial !important;
+  bottom: 0;
+  position: absolute;
+}
+
+.contactUs {
+  top: initial !important;
+  bottom: 0;
+  position: absolute;
+}
+
+#contactUs {
+	text-align: center;
+	font-family: "Assistant";
+	margin-top: 5%;
+  width: 70%;
+  margin-right: auto;
+  margin-left: auto;
+  min-width: 70%;
+}
+
+#email, #contactMessage {
+  background-color: rgb(222, 223, 224);
+  color: rgb(55, 52, 53);
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 10px;
+  padding-right: 80px;
+  border: none;
+  width: 35%;
+  font-family: "Assistant";
+  font-size: 18px;
+}
+
+#email {
+  margin-left: 30px;
+}
+
+#submitButton {
+  background-color: rgb(55, 52, 53);
+  color: rgb(192,191,191);
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border: none;
+  font-family: "Assistant";
+  font-size: 20px;
+  width: 20%;
+}
+
+#submitButton:disabled {
+  background-color: rgb(96, 95, 96);
+}
+
+#contactDog {
+  width: 19%;
+  top: 30%;
+  left: 17%;
+  position: absolute;
+  z-index: -1;
+}
+
+#greenTick {
+  width: 3%;
+  visibility: hidden;
+}
+
+#invalidEmail {
+  visibility: hidden;
+  color: #d13030;
+}
+
+#messageSent { 
+  visibility: hidden;
+  position: fixed;
+  width: 25%;
+  right: 0;
+  bottom: 7%;
+  font-family: "Assistant";
+  font-size: 20px;
+}
+
+.alert {
+  padding: 12px !important;
+  color: white;
+  opacity: 1;
+  transition: opacity 0.6s;
+  background-color: #269b53;
+}
+
+.closebtn {
+  margin-left: 15px;
+  color: white;
+  font-weight: bold;
+  float: right;
+  font-size: 22px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.closebtn:hover {
+  color: black;
+}

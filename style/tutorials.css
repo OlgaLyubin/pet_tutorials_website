@@ -1,0 +1,326 @@
+body{
+    height: 100%;
+    width: 100%;
+    background-image: url("../pictures/backgroundpaw.png"); 
+    background-size: 70% ;
+    background-position: 190% 10%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;  
+}
+
+.contact{
+    position: absolute;
+    cursor: pointer;
+    width: 4%;
+    height: auto;
+    bottom: 4.5%;
+}
+
+p{
+    font-family: 'assistant';   
+}
+
+
+@font-face{ 
+    font-family: 'assistant';
+    src: url('../fonts/Assistant-Light.otf');  
+}
+
+@font-face{ 
+    font-family: 'arima';
+    src: url('../fonts/ArimaKoshi-Light.otf');  
+}
+
+h2{
+    font-family: 'arima' !important;
+    left:34%;
+    font-size: 2.1vw;
+    position: absolute;
+}
+
+.title{
+    font-family: 'arima' !important;
+    text-align: center;
+    position: absolute;
+    font-size: 480%;
+    left:45%;
+    top: 18%; 
+}
+
+.navList {
+    text-decoration: none;
+    color: black;
+}
+.navbar-default {
+    border: none !important;
+    font-family: arima;
+    font-size: 1.2vw;
+    padding-top: 0.5vw !important;
+    padding-left: 1vw;
+    transition:750ms ease;
+    background-color: transparent !important;
+    z-index: 3;
+    width:100vw;
+    max-height: 10% !important;
+}
+.affix {
+    top: 0;
+    width: 100vw;
+    z-index: 9999 !important;
+}
+.navbar-default.scrolled{
+    background-color: #FFFFFE !important;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 3px 15px 0 rgba(0, 0, 0, 0.14);
+}
+.navbar-nav{
+    width: 80vw;
+}
+.navbar-nav > li{
+    padding-left: 3vw !important;
+    padding-right: 2vw !important;
+}
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+    position: relative;
+    color: #000;
+    text-decoration: none;
+}
+.navbar-default .navbar-nav > li > a:before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 8%;
+    bottom: 10px;
+    left: 0;
+    background-color: #5EC69F;
+    visibility: hidden;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;    
+}
+.navbar-default .navbar-nav > li > a:hover:before{
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);    
+}
+.navbar-brand{
+    font-weight: bold;
+    color: #010000 !important;
+    font-family: arima;
+    font-size: inherit;
+    font-size: 150% !important;
+}
+
+/*end of side bar stuff */
+@media (max-width: 767px) {
+    .navbar-default {
+        background-color:#FFFFFE !important;
+    }
+     .navbar-form .form-control {
+        display: inline-block;
+        width: 35%;
+        vertical-align: middle;
+    }
+    .navbar-default .navbar-nav > li > a {
+        width: 20%;
+        position: inherit;
+    }
+}
+
+/*end of navbar stuff */
+
+
+
+.feedIcon{
+    cursor: pointer;
+    position: absolute;
+    width: 17%;
+    left: 15%;
+    top:40%;
+}
+
+.foodIcon{
+    cursor: pointer;
+    position: absolute;
+    width:17%;
+    top:40%;
+    left:33%;
+}
+
+.avoidIcon{
+    cursor: pointer;
+    position: absolute;
+    width:17%;
+    top:40%;
+    left:51%;
+}
+
+.weightIcon{
+    cursor: pointer;
+    position: absolute;
+    width:17%;
+    top:40%;
+    left:69%;
+}
+
+.image {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+
+}
+
+.feedIcon:hover .image {
+    transform: scale(1.1);
+    background-position: -60px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+.avoidIcon:hover .image {
+    transform: scale(1.1);
+    background-position: -60px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+
+.weightIcon:hover .image {
+    transform: scale(1.1);
+    background-position: -60px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+.foodIcon:hover .image {
+    transform: scale(1.1);
+    background-position: -60px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+.pulse{
+    position: absolute;
+    cursor: pointer;
+    opacity: 0.5;
+    width:4%; height:auto; left:75%;
+}
+
+.pulse:hover{
+    opacity:1;
+}
+
+.popup{
+    visibility: hidden;
+    position: fixed;
+    bottom: 4%;
+    left:7%;
+    background-color: #2f3030;
+    color: #e5e5e5;
+    width:12%;
+    text-align: center;
+    border-radius: 10px;
+    padding: 3px 0;
+
+
+}
+
+
+
+/*Back to Top Button*/
+#myBtn {
+    font-family: 'assistant';
+    display: none;              /* Hidden by default */
+    position: fixed;            /* Fixed/sticky position */
+    bottom: 20px;               /* Place the button at the bottom of the page */
+    right: 30px;                /* Place the button 30px from the right */
+    z-index: 99;                /* Make sure it does not overlap */
+    border: none;               /* Remove borders */
+    outline: none;              /* Remove outline */
+    background-color: transparent;
+    color: #636262;              /* Text color */
+    cursor: pointer;             /* Add a mouse pointer on hover */
+    padding: 15px;               /* Some padding */
+    font-size: 16px;             /* Increase font size */
+}
+
+#myBtn:hover {
+    text-decoration: underline;
+}
+
+/* sidebar stuff */
+#paw {
+    width: 5%;
+    bottom: 2%;
+    left: 1%;
+    position: fixed;
+    z-index: 100;
+}
+
+.menu-hide {
+    width: 15%;
+    background-color: #F4F6F4;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 3px 15px 0 rgba(0, 0, 0, 0.14);
+    left: -25%;
+    height: 100vh;
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    transition: all .6s ease-in-out;
+    /*end of nav*/
+}
+.menu-hide nav {
+    /*end of ul*/
+}
+.menu-hide nav ul {
+    /*end of li*/
+}
+.menu-hide nav ul li {
+    padding-top: 10%;
+    padding-bottom: 10%;
+    padding-right: 25%;
+    text-align: center;
+    list-style-type: none;
+    line-height: 300%;
+    transition: all .5s ease;
+}
+.menu-hide nav ul li a:hover {
+    transition: all .5s ease;
+    color: #5EC69F !important;
+}
+.menu-hide nav ul li a {
+    text-decoration: none;
+    color: #202021;
+    font-family: "Assistant";
+    font-size: 1.1vw;
+
+}
+.menu-hide.show {
+    left: 0;
+    background-color: #f2f2f2;
+    transition: all .6s ease-in-out;
+}
+#sidebarTop{
+    padding: 33%;
+}
+/*end of side bar stuff */
+
+
+
+.footer {
+    position: absolute;
+    bottom: 0% !important;
+    top: 540%;
+    width:100%;
+    height: 40%;
+    z-index: -1;
+    opacity: 0.8;
+    padding: 1rem;
+    background-color: #5EC69F;
+    text-align: center;
+
+}
+
+.contactUs{
+   z-index: 999; font-size: 2vw; top: 573%; position: absolute;  font-family: 'assistant'; right:29.5%;color: white;
+}
+
